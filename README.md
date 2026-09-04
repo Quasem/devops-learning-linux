@@ -352,6 +352,8 @@ cat ./-
 # Wrap the filename in quotes
 cat "./spaces in this filename"
 ```
+![Bandit 2-3](assets/screenshots/Bandit-2-3.png)
+![bandit 2-3](assets/screenshots/bandit-2-3.-.png)
 
 #### Level 3 → 4 — Hidden files
 ```bash
@@ -359,6 +361,7 @@ cat "./spaces in this filename"
 ls -a
 cat ...Hiding-From-You
 ```
+![Bandit 3-4](assets/screenshots/bandit-3-4.png)
 
 #### Level 4 → 5 — Identifying file types
 ```bash
@@ -366,12 +369,14 @@ cat ...Hiding-From-You
 file ./-*
 cat ./-file07      # Only file07 was ASCII text
 ```
+![Bandit 4-5](assets/screenshots/bandit-4-5.png)
 
 #### Level 5 → 6 — Finding files by properties
 ```bash
 # Find a file that is exactly 1033 bytes and not executable
 find inhere -type f -size 1033c ! -executable
 ```
+
 
 #### Level 6 → 7 — Searching the whole system
 ```bash
@@ -385,6 +390,7 @@ find / -user bandit7 -group bandit6 -size 33c 2>/dev/null
 # grep searches a file for lines containing a specific word
 grep "millionth" data.txt
 ```
+![Bandit 7-8](assets/screenshots/Bandit-7-8.png)
 
 #### Level 8 → 9 — Finding the unique line
 ```bash
@@ -392,11 +398,16 @@ grep "millionth" data.txt
 sort data.txt | uniq -u
 ```
 
+![Bandit 8-9](assets/screenshots/Bandit-8-9.png)
+
 #### Level 9 → 10 — Extracting readable strings from binary
 ```bash
 # strings extracts printable text from binary, grep filters for lines with "=="
 strings data.txt | grep "=="
 ```
+
+![Bandit 9-10](assets/screenshots/Bandit-9-10.png)
+
 
 #### Level 10 → 11 — Decoding base64
 ```bash
@@ -404,11 +415,15 @@ strings data.txt | grep "=="
 base64 -d data.txt
 ```
 
+![Bandit 10-11](assets/screenshots/bandit-10-11.png)
+
 #### Level 11 → 12 — Decoding ROT13
 ```bash
 # tr translates character sets — ROT13 shifts each letter by 13 positions
 cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
 ```
+
+![Bandit 11-12](assets/screenshots/Bandit-11-12.png)
 
 #### Level 12 → 13 — Recursive decompression (the hardest level so far)
 
@@ -449,6 +464,8 @@ cat data                     # Read the password
 | `bunzip2` | Decompress `.bz2` files |
 | `tar -xf` | Extract `.tar` archives |
 
+![Bandit 12-13](assets/screenshots/Bandit-12-13.png)
+
 #### Level 13 → 14 — SSH authentication with a private key
 
 Instead of a password, this level provided a private SSH key file. This is how most real-world server authentication works in cloud environments.
@@ -482,6 +499,8 @@ SSH strictly rejects private key files that are readable by other users. `600` m
 
 > ☁️ **Cloud relevance:** Private key authentication is the standard way to access cloud servers (AWS EC2, GCP VMs). You will use `ssh -i` constantly as a cloud engineer.
 
+![Bandit 13-14](assets/screenshots/Bandit-13-14.png)
+![Bandit 13-14](assets/screenshots/Bandit-13-14-.png)
 ---
 
 #### Level 14 → 15 — Netcat: sending data to a network port
@@ -570,6 +589,8 @@ Copying a multi-line SSH private key between terminals can introduce line-break 
 
 > ☁️ **Cloud relevance:** `nmap` is a fundamental tool for security audits and network reconnaissance in cloud infrastructure.
 
+![Bandit 16-17](assets/screenshots/Bandit-16-17.png)
+
 ---
 
 #### Level 17 → 18 — The `diff` command: comparing files
@@ -599,6 +620,8 @@ diff passwords.old passwords.new
 > ☁️ **Cloud relevance:** `diff` is what powers `git diff` under the hood. Cloud engineers use it constantly to compare config files (Kubernetes YAMLs, Nginx configs, Terraform files) when debugging environment changes.
 
 ---
+![Bandit 17-18](assets/screenshots/Bandit-17-18.png)
+![Bandit 17-18](assets/screenshots/Bandit-level-17-18.png)
 
 #### Level 18 → 19 — Bypassing a `.bashrc` login trap
 
