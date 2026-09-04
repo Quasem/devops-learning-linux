@@ -345,6 +345,7 @@ cat readme
 # A file named "-" confuses cat — use ./ to specify it's a path, not a flag
 cat ./-
 ```
+![Bandit 1-2](assets/screenshots/Bandit-1-2.png)
 
 #### Level 2 → 3 — Files with spaces in the name
 ```bash
