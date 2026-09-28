@@ -12,7 +12,7 @@ script written in VS Code and tested locally.
 |-------|---------|--------|-------------|
 | 1 | Create Arena directory and files | ✅ | mkdir, touch, ls |
 | 2 | Output numbers 1 to 10 | ✅ | for loops |
-| 3 | Check if hero.txt exists | ⏳ | if statements |
+| 3 | Check if hero.txt exists | ✅ | if statements |
 | 4 | Copy .txt files to Backup | ⏳ | cp, wildcards |
 | 5 | Boss Battle 1 | ⏳ | Combined skills |
 | 6 | Argument parsing | ⏳ | $1, $2 parameters |
