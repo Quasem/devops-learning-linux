@@ -14,7 +14,7 @@ script written in VS Code and tested locally.
 | 2 | Output numbers 1 to 10 | ✅ | for loops |
 | 3 | Check if hero.txt exists | ✅ | if statements |
 | 4 | Copy .txt files to Backup | ✅ | cp, wildcards |
-| 5 | Boss Battle 1 | ⏳ | Combined skills |
+| 5 | Boss Battle 1 | ✅ | Combined skills |
 | 6 | Argument parsing | ⏳ | $1, $2 parameters |
 | 7 | Sort .txt files by size | ⏳ | ls, sort |
 | 8 | Multi-file word searcher | ⏳ | grep, loops |
