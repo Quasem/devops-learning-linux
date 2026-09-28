@@ -17,7 +17,7 @@ script written in VS Code and tested locally.
 | 5 | Boss Battle 1 | ✅ | Combined skills |
 | 6 | Argument parsing | ✅ | $1, $2 parameters |
 | 7 | Sort .txt files by size | ✅  | ls, sort |
-| 8 | Multi-file word searcher | ⏳ | grep, loops |
+| 8 | Multi-file word searcher | ✅ | grep, loops |
 | 9 | Monitor directory changes | ⏳ | inotifywait, logging |
 | 10 | Boss Battle 2 | ⏳ | Intermediate scripting |
 | 11 | Disk space report | ⏳ | df, conditionals |
