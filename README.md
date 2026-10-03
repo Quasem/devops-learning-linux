@@ -509,7 +509,7 @@ The password was retrieved by submitting the current level's password to a servi
 
 ```bash
 # Pipe the password directly into netcat, which sends it to the port
-echo "aaWecNkG4FhxJQxz07uiwzVP6bJiYS65" | nc localhost 30000
+echo <bandit14_password>" | nc localhost 30000
 
 # Server responds: Correct! pbLYuZtTg4MgaqfJx8jbA9gKKGqM68A7
 ```
@@ -540,7 +540,7 @@ openssl s_client -connect localhost:30001
 
 # Method 2: One-liner pipe (cleaner)
 # -ign_eof prevents the connection closing before the server can reply
-echo "pbLYuZtTg4MgaqfJx8jbA9gKKGqM68A7" | openssl s_client -connect localhost:30001 -ign_eof
+echo <bandit15_password> | openssl s_client -connect localhost:30001 -ign_eof
 ```
 
 **Why `openssl s_client`?**
@@ -635,7 +635,7 @@ ssh bandit18@bandit.labs.overthewire.org -p 2220
 # Fix: append a command to SSH — this runs the command WITHOUT starting a login shell
 # so .bashrc never executes
 ssh bandit18@bandit.labs.overthewire.org -p 2220 cat readme
-# → Kps0fPkcP7i1FLIExk2QEjyt6dw8dxZI
+# → <bandit18_password>
 
 # Alternative: force bash to start without reading config files
 ssh -t bandit18@bandit.labs.overthewire.org -p 2220 /bin/bash --norc
